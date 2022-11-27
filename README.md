@@ -7,5 +7,5 @@ We first did a benchmark of similar existing projects :
 Then we chose :
 
 We replicate this project by adding two ways for the user to give a feedback.
-The first one is by speech : "good" or "bad".
-The second one is by hand gestures : "Thumbs up" or "Thumbs down" .
+The first one is by speech : "good" or "bad" using Speech to text file (recording then reading then return the text ).
+The second one is by hand gestures : "Thumbs up" or "Thumbs down" (folder)
