@@ -1,0 +1,10 @@
+python
+numpy
+scikit-learn
+pygame
+gym
+opencv-python
+media-pipe
+tensorflow
+Pyaudio
+SpeechRecognition
