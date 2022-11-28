@@ -1,14 +1,4 @@
 import speech_recognition as sr
-
-
-
-
-import sounddevice as sd
-from scipy.io.wavfile import write
-import soundfile as sf
-import numpy as np
-
-
 import pyaudio
 import wave
 
