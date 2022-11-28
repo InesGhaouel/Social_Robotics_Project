@@ -2,9 +2,9 @@
 The purpose of this project is to integrate a human feedback into an agent's learning .
 
 We first did a benchmark of similar existing projects :
-#Tableau avec la liste des papers
 
-Then we chose :
+
+Then we chose to implement  the TAMER algorithm from "Interactively Shaping Agents via Human Reinforcement" (Knox, Stone - 2009)
 
 We replicate this project by adding two ways for the user to give a feedback.
 The first one is by speech : "yes" or "no" using Speech to text file (recording then reading then return the text ).
