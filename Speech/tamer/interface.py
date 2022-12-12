@@ -101,6 +101,14 @@ class Interface:
                 area = self.screen.fill((255, 0, 0))
                 reward = -1
                 break
+            if text== "back" :   #gOP LEFT
+                area = self.screen.fill((255, 0, 0))
+                retour='l'
+                break
+            elif text="forward":  #GO RIGHT 
+                area = self.screen.fill((2, 255, 0)) 
+                retour = 'r'
+                break
         pygame.display.update(area)
 
         return reward
