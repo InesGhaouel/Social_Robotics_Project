@@ -141,6 +141,7 @@ class Tamer:
         print(f'Episode: {episode_index + 1}  Timestep:', end='')
         rng = np.random.default_rng()
         tot_reward = 0
+        retour='k'
         state = self.env.reset()
         ep_start_time = dt.datetime.now().time()
         with open(self.reward_log_path, 'a+', newline='') as write_obj:
@@ -174,7 +175,7 @@ class Tamer:
 
                         time.sleep(0.01)  # save the CPU
 
-                        human_reward = disp.get_scalar_feedback()
+                        human_reward,retour= disp.get_scalar_feedback()
                         feedback_ts = dt.datetime.now().time()
                         if human_reward != 0:
                             dict_writer.writerow(
@@ -186,6 +187,12 @@ class Tamer:
                                     'Environment Reward': reward
                                 }
                             )
+                            if retour=='l':  #go left
+                                print("gauche")
+                                action=0
+                            elif retour=="r" : #go right
+                                action=2
+                                print("droite")
                             self.H.update(state, action, human_reward)
                             break
 
