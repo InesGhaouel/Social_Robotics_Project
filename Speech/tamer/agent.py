@@ -109,7 +109,6 @@ class Tamer:
                 print('Leila')
 
         # hyperparameter
-        print('rrrrrrrrr')
 
         self.discount_factor = discount_factor
         self.epsilon = epsilon if not tame else 0
@@ -248,6 +247,15 @@ class Tamer:
                 state = next_state
             ep_rewards.append(tot_reward)
             print(f'Episode: {i + 1} Reward: {tot_reward}')
+                print("rewards shape",len(ep_rewards))
+        x=np.arange(1,len(ep_rewards),1)
+        print("x shaie ",len(x))
+        plt.figure(1)
+
+        plt.plot(ep_rewards,label="Total_rewards")
+        plt.xlabel('episodes')
+        plt.ylabel('reward')
+        plt.show()
         self.env.close()
         return ep_rewards
 
