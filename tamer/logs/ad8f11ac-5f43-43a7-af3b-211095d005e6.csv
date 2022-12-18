@@ -1,0 +1,13 @@
+Episode,Ep start ts,Feedback ts,Human Reward,Environment Reward
+1,19:25:26.151816,19:25:34.592839,2,-1.0
+1,19:25:26.151816,19:25:37.448310,3,-1.0
+1,19:25:26.151816,19:25:55.206567,2,-1.0
+1,19:25:26.151816,19:26:00.338961,3,-1.0
+Episode,Ep start ts,Feedback ts,Human Reward,Environment Reward
+2,19:26:09.243018,19:26:16.735783,2,-1.0
+Episode,Ep start ts,Feedback ts,Human Reward,Environment Reward
+Episode,Ep start ts,Feedback ts,Human Reward,Environment Reward
+4,19:27:34.675052,19:27:46.740063,3,-1.0
+4,19:27:34.675052,19:27:49.972218,2,-1.0
+4,19:27:34.675052,19:27:51.527139,2,-1.0
+4,19:27:34.675052,19:27:57.255422,3,-1.0
