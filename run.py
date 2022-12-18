@@ -38,7 +38,8 @@ async def main():
 
     agent = Tamer(env,choice, num_episodes, discount_factor, epsilon, min_eps, tame,
                   tamer_training_timestep, model_file_to_load="autosave")
-
+    #agent = Tamer(env,choice, num_episodes, discount_factor, epsilon, min_eps, tame,
+                  tamer_training_timestep, model_file_to_load=None)
     #await agent.train(model_file_to_save='autosave')
     agent.play(n_episodes=20, render=False)
 
